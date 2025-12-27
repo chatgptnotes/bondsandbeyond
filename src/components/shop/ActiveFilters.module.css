@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 24px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--accent-gold);
+}
+
+.tagLabel {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tagIcon {
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.clearAll {
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--accent-gold);
+  cursor: pointer;
+  padding: 6px 0;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.clearAll:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .clearAll {
+    align-self: flex-end;
+  }
+}

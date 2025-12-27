@@ -1,0 +1,244 @@
+.hero {
+  position: relative;
+  height: 50vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2000&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.heroTitle {
+  font-family: var(--font-playfair);
+  font-size: 4rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.heroSubtitle {
+  font-family: var(--font-inter);
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.05em;
+}
+
+/* Founder Section */
+.founderSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+}
+
+.founderImage {
+  position: relative;
+  background-color: #2a2a2a;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.founderContent {
+  background-color: #fcfbf9;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.accentBar {
+  width: 4px;
+  height: 50px;
+  background: linear-gradient(
+    to bottom,
+    #e74c3c 0%,
+    #e74c3c 25%,
+    #f1c40f 25%,
+    #f1c40f 50%,
+    #3498db 50%,
+    #3498db 75%,
+    #2ecc71 75%,
+    #2ecc71 100%
+  );
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.subtitle {
+  display: block;
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-family: var(--font-playfair);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.founderName {
+  font-family: var(--font-playfair);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.description {
+  font-family: var(--font-inter);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+/* Studio Section */
+.studioSection {
+  background-color: #1a1a1a;
+  padding: 6rem 2rem;
+}
+
+.studioContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.studioTitle {
+  font-family: var(--font-playfair);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.studioDescription {
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+/* Values Section */
+.valuesSection {
+  padding: 6rem 2rem;
+  background-color: #fcfbf9;
+}
+
+.valuesTitle {
+  font-family: var(--font-playfair);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.valueCard {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.valueTitle {
+  font-family: var(--font-playfair);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.valueDesc {
+  font-family: var(--font-inter);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .founderSection {
+    grid-template-columns: 1fr;
+  }
+
+  .founderImage {
+    min-height: 400px;
+  }
+
+  .founderContent {
+    padding: 3rem 2rem;
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .founderContent {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .studioSection {
+    padding: 4rem 1.5rem;
+  }
+
+  .valuesSection {
+    padding: 4rem 1.5rem;
+  }
+}
