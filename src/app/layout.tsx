@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "bondsANDbeyond | Bespoke Art & Interiors",
+  title: "bondsNbeyond | Bespoke Art & Interiors",
   description: "Curated oil paintings, murals, and sculptures for hotels, hospitals, and architects.",
 };
 

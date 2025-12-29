@@ -15,12 +15,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!artwork) {
     return {
-      title: 'Artwork Not Found - bondsANDbeyond',
+      title: 'Artwork Not Found - bondsNbeyond',
     };
   }
 
   return {
-    title: `${artwork.title} by ${artwork.artist} - bondsANDbeyond`,
+    title: `${artwork.title} by ${artwork.artist} - bondsNbeyond`,
     description: artwork.description,
   };
 }

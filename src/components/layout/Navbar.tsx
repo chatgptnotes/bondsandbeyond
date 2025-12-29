@@ -62,7 +62,7 @@ export default function Navbar() {
         <header className={clsx(styles.header, isScrolled && styles.scrolled)}>
             <div className={styles.navContainer}>
                 <Link href="/" className={styles.logo}>
-                    <span>bondsANDbeyond</span>
+                    <span>bondsNbeyond</span>
                     <span className={styles.byline}>--by krishi</span>
                 </Link>
 

@@ -7,7 +7,7 @@ import { mockArtworks } from '@/data/mockArtworks';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Shop - bondsANDbeyond | Original Art & Sculptures',
+  title: 'Shop - bondsNbeyond | Original Art & Sculptures',
   description:
     'Browse our collection of original paintings, sculptures, and custom artwork. Filter by category, style, price, and more.',
 };

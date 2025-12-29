@@ -5,7 +5,6 @@ import Hero from '@/components/ui/Hero';
 import ServiceGrid from '@/components/ui/ServiceGrid';
 import TargetClients from '@/components/ui/TargetClients';
 import SiteVisitBanner from '@/components/ui/SiteVisitBanner';
-import FounderSection from '@/components/ui/FounderSection';
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <ServiceGrid />
       <TargetClients />
       <SiteVisitBanner />
-      <FounderSection />
       <Footer />
     </main>
   );

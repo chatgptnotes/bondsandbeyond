@@ -8,7 +8,7 @@ export default function Footer() {
             <div className={styles.container}>
                 <div className={styles.grid}>
                     <div className={styles.brand}>
-                        <h3>bondsANDbeyond</h3>
+                        <h3>bondsNbeyond</h3>
                         <p>
                             Curating exceptional art experiences for hospitality, healthcare, and architectural spaces.
                             Converting walls into masterpieces.
@@ -38,7 +38,7 @@ export default function Footer() {
                     <div className={styles.column}>
                         <h4>Connect</h4>
                         <div className={styles.links}>
-                            <a href="mailto:hello@bondsandbeyond.com">Contact Us</a>
+                            <a href="mailto:hello@bondsnbeyond.com">Contact Us</a>
                             <a href="#">Instagram</a>
                             <a href="#">LinkedIn</a>
                         </div>
@@ -46,7 +46,7 @@ export default function Footer() {
                 </div>
 
                 <div className={styles.bottom}>
-                    <span className={styles.copyright}>© {new Date().getFullYear()} bondsANDbeyond. All rights reserved.</span>
+                    <span className={styles.copyright}>© {new Date().getFullYear()} bondsNbeyond. All rights reserved.</span>
                 </div>
             </div>
         </footer>

@@ -34,7 +34,7 @@ export default function AboutPage() {
         >
           <h2 className={styles.studioTitle}>Our Studio</h2>
           <p className={styles.studioDescription}>
-            bondsANDbeyond is a premium art studio specializing in custom artwork for
+            bondsNbeyond is a premium art studio specializing in custom artwork for
             commercial and residential spaces. We create paintings, sculptures, murals,
             and installations that transform environments and tell unique stories.
           </p>
@@ -80,7 +80,7 @@ export default function AboutPage() {
           <h3 className={styles.founderName}>Krishi Chouriya</h3>
 
           <p className={styles.description}>
-            Krishi Chouriya is an accomplished artist and the founder of bondsANDbeyond.
+            Krishi Chouriya is an accomplished artist and the founder of bondsNbeyond.
             With a passion for creative expression that spans over a decade, she brings
             artistic vision and leadership to every project undertaken by the studio.
           </p>
@@ -92,7 +92,7 @@ export default function AboutPage() {
           </p>
 
           <p className={styles.description}>
-            Under her guidance, bondsANDbeyond has collaborated with leading hotels, hospitals,
+            Under her guidance, bondsNbeyond has collaborated with leading hotels, hospitals,
             and architectural firms to create bespoke artwork that perfectly complements
             each unique space.
           </p>

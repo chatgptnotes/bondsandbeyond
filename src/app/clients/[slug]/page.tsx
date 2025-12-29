@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props) {
     if (!data) return { title: 'Client Not Found' };
 
     return {
-        title: `${data.title} | bondsANDbeyond`,
+        title: `${data.title} | bondsNbeyond`,
         description: data.description,
     };
 }
